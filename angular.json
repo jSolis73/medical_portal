@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "medicalPortal"
+    }
+  },
+  "defaultProject": "medicalPortal",
+  "cli": {
+    "analytics": "94328131-0864-4985-a7bd-239bacef7174"
+  }
 }
