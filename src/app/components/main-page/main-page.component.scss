@@ -1,0 +1,33 @@
+
+.container-fluid {
+  background-color: rgb(200, 255, 200);
+  height: 100vh;
+
+  .header {
+    width: 1197px;
+    margin: 0 auto;
+    background-image: url('../../../assets/header1.jpg');
+    background-repeat: no-repeat;
+    height: 400px;
+  }
+
+  .form {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(159, 252, 175);
+    width: 600px;
+    margin: 10px auto;
+
+    .custom-control-input:checked ~ .custom-control-label {
+      &::after {
+        background: rgb(60, 216, 60);
+        border-radius: 10px;
+      }
+    }
+
+    .submit {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+}

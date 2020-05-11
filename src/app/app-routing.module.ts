@@ -17,7 +17,7 @@ const routes: Routes = [
 
   {
     path: 'patient', component: PatientLayoutComponent, children: [
-      {path: 'patient', redirectTo: '/home-page', pathMatch: 'full'},
+      {path: '', redirectTo: 'home-page', pathMatch: 'full'},
       {path: 'home-page', component: MainPageComponentPatient},
       {path: 'health-book', component: HealthBookComponent},
       {path: 'health-indicators', component: HealthIndicatorsComponent},
@@ -27,11 +27,10 @@ const routes: Routes = [
 
   {
     path: 'doctor', component: DoctorLayoutComponent, children: [
-      {path: 'doctor', redirectTo: '/home-page', pathMatch: 'full'},
+      {path: '', redirectTo: 'home-page', pathMatch: 'full'},
       {path: 'home-page', component: MainPageComponentDoctor},
       {path: 'patients', component: PatientsComponent},
       {path: 'info', component: DoctorDataComponent}
-
     ]
   }
 ];
